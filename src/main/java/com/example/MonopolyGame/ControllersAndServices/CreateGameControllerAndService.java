@@ -1,7 +1,6 @@
-package com.example.MonopolyGame.Controllers;
+package com.example.MonopolyGame.ControllersAndServices;
 
 
-import com.example.MonopolyGame.Models.GamePoint;
 import com.example.MonopolyGame.Models.Players;
 import com.example.MonopolyGame.Repositories.GamePointsRepository;
 import com.example.MonopolyGame.Repositories.PlayersRepository;
@@ -14,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/monopoly_game")
 
-public class CreateGameController {
+public class CreateGameControllerAndService {
 
 
     @Autowired

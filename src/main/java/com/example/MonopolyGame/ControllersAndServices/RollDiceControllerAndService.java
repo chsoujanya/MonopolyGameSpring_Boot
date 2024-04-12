@@ -1,4 +1,4 @@
-package com.example.MonopolyGame.Controllers;
+package com.example.MonopolyGame.ControllersAndServices;
 
 
 import com.example.MonopolyGame.Models.GamePoint;
@@ -21,7 +21,7 @@ import java.util.Random;
 @NoArgsConstructor
 
 
-public class RollDiceController {
+public class RollDiceControllerAndService {
 
     private int currentPlayer = 1;
 
@@ -60,8 +60,7 @@ public class RollDiceController {
         int dice1 = rollDice();
         int dice2 = rollDice();
 
-        System.out.println(dice1);
-        System.out.println(dice2);
+
         int totalDiceValue = dice1 + dice2;
 
         // Update player position based on dice roll
@@ -184,13 +183,13 @@ public class RollDiceController {
         List<Players> players = playersRepository.findAll();
         if(players.get(0).getTurn() + players.get(1).getTurn() >= 50)
         {
-            System.out.println("Declere einner"+players.get(0).getTurn() +" "+ players.get(1).getTurn());
+
             if(players.get(0).getMoney() > players.get(1).getMoney())
             {
                 check = 1;
                 players.get(0).setWin(1);
                 playersRepository.saveAll(players);
-                System.out.println("Inside full if");
+
                 return "Player 1 is the winner with the amount "+players.get(0).getMoney();
             }
             else
