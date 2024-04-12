@@ -1,4 +1,4 @@
-package com.example.MonopolyGame.ControllersAndServices;
+package com.example.MonopolyGame.Controllers;
 
 
 import com.example.MonopolyGame.Models.GamePoint;
