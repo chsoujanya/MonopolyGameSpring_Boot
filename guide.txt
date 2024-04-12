@@ -1,0 +1,9 @@
+http://localhost:8080/monopoly_game/create
+The above url creates a new game and initializes the players table with two players. And intializes the amount as $1000.
+A table game_points is created which gives the information about the property id,place, buy_price, rent_price, purchased_by.
+http://localhost:8080/roll-die/p1
+http://localhost:8080/roll-die/p2
+The above two urls are used to roll the dice.
+It handles rolling dice for players to move around the board. When a player rolls, the application figures out how far they move and what happens when they land on a property.It deals with things like buying
+properties, paying rent, and checking who wins. It also keeps track of when the game should end. In short, it manages the basic gameplay of Monopoly, making sure everything runs smoothly for the players.
+If the spring boot application restarts or is closed abruptly the data of the game still persists and we can continue the game until its done.
