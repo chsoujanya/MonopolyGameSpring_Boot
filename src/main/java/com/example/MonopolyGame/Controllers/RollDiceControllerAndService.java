@@ -1,6 +1,6 @@
 package com.example.MonopolyGame.Controllers;
 
-
+//controller
 import com.example.MonopolyGame.Models.GamePoint;
 import com.example.MonopolyGame.Models.Players;
 import com.example.MonopolyGame.Repositories.GamePointsRepository;

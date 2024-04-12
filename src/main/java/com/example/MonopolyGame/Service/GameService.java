@@ -1,5 +1,5 @@
 package com.example.MonopolyGame.Service;
-
+//service
 import com.example.MonopolyGame.Repositories.GamePointsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
